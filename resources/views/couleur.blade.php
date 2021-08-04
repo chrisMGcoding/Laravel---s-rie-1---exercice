@@ -10,18 +10,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{$nom}}</h1>
+    
+    <h2>
+        {{$couleur}}
+    </h2>
 
-    <div class="gras">
-        test
-    </div>
+    
 
-    <h3>
-        @if ($nombre > 0) 
-            {{$nombre*4}}
+    
+    @foreach ($couleurTab as $couleur)
+
+        @if($couleur == '#AC4D39')
+            <p class="gras">bingo</p>
+
         @else 
-            Next Time !
+            <p>{{$couleur}}</p>
+            
         @endif
-    </h3>
+
+    @endforeach
+    
+
 </body>
 </html>

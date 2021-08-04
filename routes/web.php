@@ -26,3 +26,11 @@ Route::get('/seconde', function () {
     $test2 = '10';
     return view('seconde', compact('test', 'test2'));
 });
+
+Route::get('/couleur', function () {
+    $couleur = 'ff8000';
+    $couleurTab = array (
+     '#AC4D39','#39AC48','#395FAC','#AC3999'
+    );
+    return view('couleur', compact('couleur', 'couleurTab'));
+});
