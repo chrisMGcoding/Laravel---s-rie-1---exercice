@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/chris', function () {
+    $nombre = '12';
     $nom = 'chris';
-    return view('welcome', compact('nom'));
+    return view('welcome', compact('nom', 'nombre'));
 });

@@ -8,5 +8,13 @@
 </head>
 <body>
     <h1>{{$nom}}</h1>
+
+    <h3>
+        @if ($nombre > 0) 
+            {{$nombre*4}}
+        @else 
+            Next Time !
+        @endif
+    </h3>
 </body>
 </html>
