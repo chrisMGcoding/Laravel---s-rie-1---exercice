@@ -20,3 +20,9 @@ Route::get('/chris', function () {
     $nom = 'chris';
     return view('welcome', compact('nom', 'nombre'));
 });
+
+Route::get('/seconde', function () {
+    $test = '10';
+    $test2 = '10';
+    return view('seconde', compact('test', 'test2'));
+});
